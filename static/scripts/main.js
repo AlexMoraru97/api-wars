@@ -17,7 +17,7 @@ window.onload = (ev) => {
                   <td>${result.surface_water !== 'unknown' ? result.surface_water + '%' : 'unknown'}</td>
                   <td>${result.population !== 'unknown' ? new Intl.NumberFormat('ro-RO').format(result.population)+ ' people' : 'unknown'}</td>
                   <td>
-                    <button type="button" class="${result.residents.length === 0 ? "btn btn-outline-light disabled" : "btn btn-outline-warning"}">
+                    <button type="button" class="${result.residents.length === 0 ? 'btn btn-outline-light disabled' : 'btn btn-outline-warning'}">
                             ${result.residents.length === 0 ? 'No known residents' : result.residents.length + ' resident(s)'}
                     </button>
                   </td>`;
